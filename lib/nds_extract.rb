@@ -39,9 +39,9 @@ def total_gross(source)
   combined_gross = 0
   array = []
     array.push(directors_totals(source))
+    puts array
     while row_index < source.length do
     director_name = source[row_index][:name]
-    puts array
       #combined_gross += gross_for_director(source)
       #puts combined_gross
   #end
