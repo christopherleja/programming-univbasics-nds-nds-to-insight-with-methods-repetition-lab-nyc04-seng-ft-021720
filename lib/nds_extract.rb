@@ -46,7 +46,7 @@ def total_gross(source)
   #end
     row_index += 1
   end
- # combined_gross
+  combined_gross
   
   
   # Write this implementation
