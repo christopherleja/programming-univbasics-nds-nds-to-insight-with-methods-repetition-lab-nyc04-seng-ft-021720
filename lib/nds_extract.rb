@@ -39,9 +39,9 @@ def total_gross(source)
   combined_gross = 0
   director_name = source[row_index][:name]
     puts directors_totals(source)
-  while row_index < source.length do
-      #combined_gross += gross_for_director(director_name)
-     # puts combined_gross
+  if list_of_directors.include?(result[:name])
+      combined_gross += gross_for_director(director_name)
+      puts combined_gross
   #end
     row_index += 1
   end
