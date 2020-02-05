@@ -37,13 +37,11 @@ end
 def total_gross(source)
   row_index = 0
   combined_gross = 0
-  #data = directors_totals(source)
-  #  puts data
+
     while row_index < source.length do
-    director_name = list_of_directors(source)[row_index]
-      combined_gross += directors_totals(source)[director_name]
-      #puts combined_gross
-  #end
+    name = list_of_directors(source)[row_index]
+      combined_gross += directors_totals(source)[name]
+
     row_index += 1
   end
   combined_gross
