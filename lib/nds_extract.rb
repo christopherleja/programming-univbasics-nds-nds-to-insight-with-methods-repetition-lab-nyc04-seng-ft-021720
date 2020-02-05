@@ -38,8 +38,7 @@ def total_gross(source)
   row_index = 0
   combined_gross = 0
   director_name = source[row_index][:name]
-  list_of_directors(source)
-  if list_of_directors.include?(director_name) do
+  if list_of_directors(source).include?(director_name) do
     
       combined_gross += gross_for_director(source)
       puts combined_gross
