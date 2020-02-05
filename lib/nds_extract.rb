@@ -43,7 +43,7 @@ def total_gross(source)
 #puts name_in_source
   while row_index < source.length do
     
-      combined_gross += gross_for_director(source)
+      combined_gross += directors_totals(gross_for_director)
       puts combined_gross
     #end
     row_index += 1
