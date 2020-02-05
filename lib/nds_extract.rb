@@ -40,7 +40,7 @@ def total_gross(source)
   director_name = source[row_index][:name]
   if list_of_directors(source).include?(director_name) do
     
-      combined_gross += gross_for_director(source)
+      combined_gross += gross_for_director(director_name)
       puts combined_gross
   end
    # row_index += 1
