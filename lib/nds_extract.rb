@@ -38,7 +38,7 @@ def total_gross(source)
   row_index = 0
   combined_gross = 0
   data = directors_totals(source)
-    puts array
+    puts data
     while row_index < source.length do
     director_name = source[row_index][:name]
       combined_gross += array[:name][row_index]
