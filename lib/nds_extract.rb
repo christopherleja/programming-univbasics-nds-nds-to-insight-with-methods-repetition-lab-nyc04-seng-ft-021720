@@ -42,7 +42,7 @@ def total_gross(source)
     puts directors_totals
       #combined_gross += gross_for_director(director_name)
      # puts combined_gross
-  end
+  #end
     row_index += 1
   end
   combined_gross
