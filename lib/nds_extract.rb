@@ -40,7 +40,7 @@ def total_gross(source)
   puts source[row_index][:movies][5][:worldwide_gross]
   puts source[row_index][:names].class
     while row_index < source.length do
-    director_name = source[row_index][:name]
+    director_name = source[:name]
     puts director_name
       #combined_gross += gross_for_director(source)
       #puts combined_gross
