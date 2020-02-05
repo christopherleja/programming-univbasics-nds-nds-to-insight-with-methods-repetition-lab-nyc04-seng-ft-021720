@@ -1,8 +1,8 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative './directors_database'
 
-result = {}
 def directors_totals(source)
+  result = {}
   director_index = 0
   while director_index < source.size do
     director = source[director_index]
@@ -40,7 +40,7 @@ def total_gross(source)
   director_name = source[row_index][:name]
     puts directors_totals(source)
   if list_of_directors(source).include?(result[:name])
-      combined_gross += gross_for_director(director_name)
+      #combined_gross += gross_for_director(director_name)
       puts combined_gross
   #end
     row_index += 1
