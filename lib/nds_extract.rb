@@ -44,7 +44,7 @@ def total_gross(source)
       combined_gross += gross_for_director(source)
       puts combined_gross
     #end
-    row_index += 1
+   # row_index += 1
   end
   combined_gross
   
