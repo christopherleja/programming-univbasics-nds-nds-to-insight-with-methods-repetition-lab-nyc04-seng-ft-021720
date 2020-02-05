@@ -15,12 +15,11 @@ end
 def gross_for_director(d)
   total = 0
   index = 0
-  row_index = 0
-
-  while index < d[row_index][:movies].length do
-    total += d[row_index][:movies][index][:worldwide_gross]
+  
+  while index < d[:movies].length do
+    total += d[:movies][index][:worldwide_gross]
     index += 1
-    row_index += 1
+    
   end
   total
 end
@@ -40,11 +39,11 @@ def total_gross(source)
   combined_gross = 0
   director_name = source[row_index][:name]
   #dir_data = source[row_index]
-  source_name = list_of_directors(source)
+  source_name = d
 #puts name_in_source
   while row_index < source.length do
     
-      combined_gross += gross_for_director(source_name)
+      combined_gross += gross_for_director(d)
       puts combined_gross
     #end
     row_index += 1
