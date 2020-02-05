@@ -40,9 +40,9 @@ def total_gross(source)
   #data = directors_totals(source)
   #  puts data
     while row_index < source.length do
-    director_name = source[row_index][:name]
+    director_name = list_of_directors(source)[row_index]
       combined_gross += directors_totals(source)[director_name]
-      puts combined_gross
+      #puts combined_gross
   #end
     row_index += 1
   end
