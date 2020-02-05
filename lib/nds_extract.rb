@@ -39,7 +39,7 @@ def total_gross(source)
   director_name = source[row_index][:name]
   #dir_data = source[row_index]
   source_name = list_of_directors(source)
-puts name_in_source
+#puts name_in_source
   while row_index < source.length do
     
       combined_gross += gross_for_director(source_name)
