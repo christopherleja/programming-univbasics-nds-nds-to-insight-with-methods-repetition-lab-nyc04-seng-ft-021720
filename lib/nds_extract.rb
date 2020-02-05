@@ -44,8 +44,8 @@ def total_gross(source)
      # puts combined_gross
   #end
     #row_index += 1
-  end
-  combined_gross
+  #end
+ # combined_gross
   
   
   # Write this implementation
